@@ -35,5 +35,16 @@ if($age > 18){
     echo "He is a tenizer";
 
 }else{
-    echo "she is not a teenazer";
+    echo "she is not a teenager";
 }
+
+echo "<br>";
+
+
+$groups = "Human";
+$place = "Earth";
+
+printf("We are %s live in %s", $groups,$place);
+
+echo "<br>";
+
