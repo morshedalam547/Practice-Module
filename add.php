@@ -3,7 +3,7 @@
 $num = 10;
 $num2 = 10;
 
-$result = ($num == $num2) ? "True" : "false";
+$result = ($num == $num2) ? "True" : "False";
 
 echo $result;
 
@@ -27,3 +27,13 @@ if($number == $number2){
     echo "False";
 }
 
+echo "<br>";
+
+$age = 17;
+
+if($age > 18){
+    echo "He is a tenizer";
+
+}else{
+    echo "she is not a teenazer";
+}
