@@ -28,3 +28,15 @@ $b = 6;
 
 $c = $a+$b;
 echo $c;
+
+echo "<br>";
+
+$name = "panda";
+
+$name = "panda the great";
+
+print $name;
+
+define(name, "panda");
+
+echo name;
