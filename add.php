@@ -48,3 +48,11 @@ printf("We are %s live in %s", $groups,$place);
 
 echo "<br>";
 
+$number = 10;
+$number2 = 20;
+echo $number + $number2;
+
+$age = 10;
+$age2 = 20;
+echo $age + $age2;
+
