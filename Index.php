@@ -38,7 +38,7 @@ $tomorrow_date = date("Y-m-d", strtotime("+2 days"));
 print $tomorrow_date;
 echo "<br>";
 
-$name = "Morshed";
+$name = "Morshed alam";
 
 print mb_strtoupper($name);
 
