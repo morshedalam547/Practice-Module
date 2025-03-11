@@ -113,3 +113,62 @@ function colorDiv2($bgcolor = "black"){
 
 colorDiv2("orange");
 colorDiv2("tomato");
+
+
+$number = [20,30,100];
+
+function returnAddition($a){
+    $result = 0;
+    foreach($a as $key=> $num){
+        $result += $a[$key];
+    }
+    $userNumbers = implode(",", $a);
+
+    $feedback = [
+        "numbers" => $userNumbers,
+        "result" => $result
+    ];
+    return $feedback;
+}
+
+$responses = returnAddition($number);
+
+echo returnAddition($number)["result"];
+
+print "<pre>";
+ var_dump($responses);
+print "</pre>";
+
+echo "<br>";
+
+
+function sum3(int ...$numbers) :int {
+    $result =0;
+    for($i=0; $i<count($numbers);$i++){
+        $result +=$numbers[$i];
+        }
+      return $result;
+}
+$result = sum2(500+65);
+
+echo $result;
+
+print "<pre>";
+var_dump($result);
+print "</pre>";
+
+//local variable and global variable
+
+
+$test_var = "Test <br>";
+
+function my_name(){
+global $test_var;
+global $my_name;
+$my_name = "Morshed";
+echo $test_var;
+
+}
+
+my_name();
+echo $my_name;
