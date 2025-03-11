@@ -10,3 +10,33 @@ foreach(range(1,10) as $number){
     echo "<br>";
 }
 
+$i=3;
+do{
+    $i++;
+ echo $i .'<br>';
+
+}while($i<5);
+
+// function
+function myFunction($name){
+    echo "Hello $name";
+}
+
+print myFunction("John");
+echo "<br>";
+function Fruits($fruits){
+    echo $fruits;
+    echo "<br>";
+}
+
+Fruits("App"); 
+
+// Recursive function
+
+function factorial($n) {
+    if ($n == 0 || $n == 1) {
+        return 1;
+    }
+    return $n * factorial($n - 1);
+}
+echo "Factorial of 10 is " . factorial(10);
