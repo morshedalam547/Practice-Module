@@ -59,4 +59,12 @@ for ( $i= 1; $i<=4; $i++){
       continue;
     }
     
+echo "<br>";
+
+for ( $i= 1; $i<=4; $i++){
+    echo "Allah <br>";
+    if ($i == 3){
+      continue;
+    }
+    
 }
