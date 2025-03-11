@@ -52,19 +52,21 @@ for($i = 1; $i<= 10; $i++){
 
 
 echo "<br>";
-c
-for ( $i= 1; $i<=4; $i++){
+
+for( $i= 1; $i<=4; $i++){
     echo "Allah <br>";
     if ($i == 3){
       continue;
     }
     
+}
+
 echo "<br>";
 
-for ( $i= 1; $i<=4; $i++){
-    echo "Allah <br>";
-    if ($i == 3){
-      continue;
-    }
-    
+// Array
+$colors = array("Red", "Green", "Blue");
+
+foreach($colors as $color){
+    echo $color;
+    echo "<br>";
 }
