@@ -1,4 +1,5 @@
 <?php
+include 'db.php';
 
 $num = 10;
 $num2 = 10;
@@ -51,8 +52,12 @@ echo "<br>";
 $number = 10;
 $number2 = 20;
 echo $number + $number2;
+echo "<br>";
 
 $age = 10;
 $age2 = 20;
 echo $age + $age2;
+echo "<br>";
 
+
+echo addition(100, 20);

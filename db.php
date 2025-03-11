@@ -67,8 +67,8 @@ echo "<br>";
 // Array
 $colors = array("Red", "Green", "Blue");
 
-foreach($colors as $color){
-    echo $color;
+foreach($colors as  $color){
+    echo  $color;
     echo "<br>";
 }
 
@@ -81,3 +81,17 @@ echo "<pre>";
 var_dump($colors);
 echo "</pre>";
 
+
+function  addition($a, $b){
+   echo $a + $b;
+}
+
+
+function sum2(int ...$numbers) :int {
+    $result =0;
+    for($i=0; $i<count($numbers);$i++){
+        $result +=$numbers[$i];
+        }
+      return $result;
+}
+echo sum2(5,6,8,5,6,30,20,10,20,30,40,50,60,70,80,90,100,520,622,55,55,8500055);
