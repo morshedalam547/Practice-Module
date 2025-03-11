@@ -52,7 +52,7 @@ for($i = 1; $i<= 10; $i++){
 
 
 echo "<br>";
-
+c
 for ( $i= 1; $i<=4; $i++){
     echo "Allah <br>";
     if ($i == 3){
