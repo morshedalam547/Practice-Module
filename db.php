@@ -63,6 +63,7 @@ for( $i= 1; $i<=4; $i++){
 
 echo "<br>";
 
+
 // Array
 $colors = array("Red", "Green", "Blue");
 
@@ -70,3 +71,13 @@ foreach($colors as $color){
     echo $color;
     echo "<br>";
 }
+
+echo "<pre>";
+print_r($colors);
+echo "</pre>";
+
+
+echo "<pre>";
+var_dump($colors);
+echo "</pre>";
+
