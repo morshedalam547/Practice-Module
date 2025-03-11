@@ -40,3 +40,23 @@ function factorial($n) {
     return $n * factorial($n - 1);
 }
 echo "Factorial of 10 is " . factorial(10);
+
+// Break and Continue
+for($i = 1; $i<= 10; $i++){
+    if ($i == 5){
+        continue;
+    }
+    echo  "print $i". "<br>";
+
+} 
+
+
+echo "<br>";
+
+for ( $i= 1; $i<=4; $i++){
+    echo "Allah <br>";
+    if ($i == 3){
+      continue;
+    }
+    
+}
