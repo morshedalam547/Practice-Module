@@ -68,4 +68,15 @@ function greet3() {
 $result= greet3();
 
 echo $result;
+echo "<br>";
 
+$number = 2;
+$number = 2;
+
+if($number >2) {
+    echo "5 is greater than 2";
+}elseif($number ==2) {
+    echo "5 is equal to 2";
+}else {
+    echo "5 is less than 2";
+}
