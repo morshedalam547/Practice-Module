@@ -69,7 +69,3 @@ $result= greet3();
 
 echo $result;
 
-
-function greet4($name = "Guest") {
-    return "Welcome, " . $name;
-}
