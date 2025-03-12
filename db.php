@@ -172,3 +172,10 @@ echo $test_var;
 
 my_name();
 echo $my_name;
+
+function my_name2(){
+    $my_name = "Morshed";
+    echo $my_name;
+}
+my_name2();
+ echo "<br>";
