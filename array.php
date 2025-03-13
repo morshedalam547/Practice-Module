@@ -111,7 +111,7 @@ $emp=[
 
 
   $emp=[
-    [
+    "Morshed"=>[
       "id"=> 1,
       "Name"=> "Morshed",
       "designation"=> "Manager",
@@ -148,3 +148,53 @@ foreach ($emp as $key => $value) {
     }
     echo "<br>";
 }
+
+$marks2=[ 
+    "Morshed"  =>["physics"=> 85,"maths"=> 78,"chemistry"=>89],
+    "Nure Alam"=>["physics"=> 85,"match"=> 95,"chemistry"=>79],
+     "Al amin" =>["physics"=> 95, "match"=> 96, "chemistry"=>79],
+  ];
+
+  foreach($marks2 as $val1){
+    foreach($val1 as $key => $val){
+      echo "Name: $key, Marks: $val <br>";
+    }
+  }
+
+echo "<br>";
+echo "<br>";
+
+
+
+$marks=[ 
+    "Morshed"  =>["physics"=> 85,"maths"=> 78,"chemistry"=>89],
+    "Nure Alam"=>["physics"=> 85,"match"=> 95,"chemistry"=>79],
+     "Al amin" =>["physics"=> 95, "match"=> 96, "chemistry"=>79],
+  ];
+  foreach($marks as $key => $val1){
+   echo $key . " ";
+   foreach($val1 as $val2){
+    echo  $val2 . " ";
+   }
+   echo "<br>";
+  }
+  
+  
+  echo "<br>";
+echo "<br>";
+
+
+  $marks1 = [
+       "Morshed" => ["philosophy"=> 80, "math"=> 90, "english"=> 70, "science"=> 85, "social science"=> 75],
+       "Rahim" => ["philosophy"=> 70, "math"=> 80, "english"=> 60, "science"=> 75, "social science"=> 65],
+          "Karim" => ["philosophy"=> 60, "math"=> 70, "english"=> 50, "science"=> 65, "social science"=> 55]
+  ];
+  
+  foreach ($marks1 as $key => $value) {
+      echo "Name: $key <br>";
+      foreach ($value as $key1 => $value1) {
+          echo "Subject: $key1, Marks: $value1 <br>";
+      }
+      echo "<br>";
+  }
+  
