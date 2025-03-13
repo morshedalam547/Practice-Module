@@ -107,3 +107,44 @@ $emp=[
   
   echo "<br>";
   echo "<br>";
+
+
+
+  $emp=[
+    [
+      "id"=> 1,
+      "Name"=> "Morshed",
+      "designation"=> "Manager",
+      "salary" => 50000,
+    ],
+     [
+      "id"=> 2,
+      "Name"=> "Nure alam",
+      "designation"=> "DMD",
+      "salary" => 70000,
+    ],
+     [
+      "id"=> 3,
+      "Name"=> "Al amin",
+      "designation"=> "MD",
+      "salary" => 90000,
+    ],
+  
+     [
+      "id"=> 4,
+      "Name"=> "Mahid",
+      "designation"=> "Chairman",
+      "salary" => 100000,
+    ],
+  ];
+echo "<pre>";
+  print_r($emp);
+  echo "</pre>";
+
+foreach ($emp as $key => $value) {
+    echo "Name: $key <br>";
+    foreach ($value as $key1 => $value1) {
+        echo "Subject: $key1, Marks: $value1 <br>";
+    }
+    echo "<br>";
+}
