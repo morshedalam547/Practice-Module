@@ -35,3 +35,13 @@ foreach ($colors as $value) {
 }
 
 $colors_count= count($colors);
+
+echo "<br>";
+echo "<br>";
+
+$marks =["philosophy"=> 80, "math"=> 90, "english"=> 70, "science"=> 85, "social science"=> 75];
+
+foreach ($marks as $key => $value) {
+    echo "Subject: $key, Marks: $value <br>";
+}
+
