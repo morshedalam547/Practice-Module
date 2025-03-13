@@ -61,3 +61,49 @@ foreach ($marks1 as $key => $value) {
     }
     echo "<br>";
 }
+
+echo "<br>";
+echo "<br>";
+
+
+$emp=[
+    [
+      "id"=> 1,
+      "Name"=> "Morshed",
+      "designation"=> "Manager",
+      "salary" => 50000,
+    ],
+     [
+      "id"=> 2,
+      "Name"=> "Nure alam",
+      "designation"=> "DMD",
+      "salary" => 70000,
+    ],
+     [
+      "id"=> 3,
+      "Name"=> "Al amin",
+      "designation"=> "MD",
+      "salary" => 90000,
+    ],
+  
+     [
+      "id"=> 4,
+      "Name"=> "Mahid",
+      "designation"=> "Chairman",
+      "salary" => 100000,
+    ],
+  ];
+  echo "<table border='1px'cellpadding='5px' cellspacing='0px'>
+  <tr>
+  <th>Id</th>
+  <th>Name</th>
+  <th>Designation</th>
+  <th>salary</th>
+  </tr>";
+  foreach ($emp as list ( "id"=> $id,"Name"=>$name,"designation"=>$designation,"salary"=>$salary)){
+    echo "<tr><td>$id</td> <td>$name</td> <td>$designation</td> <td>$salary</td></tr>";
+  }
+  echo "</table>";
+  
+  echo "<br>";
+  echo "<br>";
