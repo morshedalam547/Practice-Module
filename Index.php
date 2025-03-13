@@ -82,3 +82,14 @@ if($number >2) {
 }
 echo "<br>";
 
+$age = 2;
+
+if($age >=13 && $age  <= 19){
+    echo "He is a teenager";
+
+}elseif($age <= 13){
+    echo "He is a child";
+
+}else{
+    echo "He is an adult";
+}
