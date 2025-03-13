@@ -45,3 +45,19 @@ foreach ($marks as $key => $value) {
     echo "Subject: $key, Marks: $value <br>";
 }
 
+echo "<br>";
+echo "<br>";
+
+$marks1 = [
+     "Morshed" => ["philosophy"=> 80, "math"=> 90, "english"=> 70, "science"=> 85, "social science"=> 75],
+     "Rahim" => ["philosophy"=> 70, "math"=> 80, "english"=> 60, "science"=> 75, "social science"=> 65],
+        "Karim" => ["philosophy"=> 60, "math"=> 70, "english"=> 50, "science"=> 65, "social science"=> 55]
+];
+
+foreach ($marks1 as $key => $value) {
+    echo "Name: $key <br>";
+    foreach ($value as $key1 => $value1) {
+        echo "Subject: $key1, Marks: $value1 <br>";
+    }
+    echo "<br>";
+}
