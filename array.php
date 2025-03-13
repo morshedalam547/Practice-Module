@@ -22,3 +22,16 @@ for($i=0; $i <=5;$i++){
   echo "<li>$colors[$i] </li>";
 }
 echo "</ul>";
+
+
+echo "<br>";
+echo "<br>";
+$colors[1] = "pink";
+$colors[2] = "purple";
+array_unshift($colors);
+
+foreach ($colors as $value) {
+    echo "$value <br>";
+}
+
+$colors_count= count($colors);
