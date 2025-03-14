@@ -160,6 +160,17 @@ $marks2=[
       echo "Name: $key, Marks: $val <br>";
     }
   }
+$marks2=[ 
+    "Morshed"  =>["physics"=> 85,"maths"=> 78,"chemistry"=>89],
+    "Nure Alam"=>["physics"=> 85,"match"=> 95,"chemistry"=>79],
+     "Al amin" =>["physics"=> 95, "match"=> 96, "chemistry"=>79],
+  ];
+
+  foreach($marks2 as $val1){
+    foreach($val1 as $key => $val){
+      echo "Name: $key, Marks: $val <br>";
+    }
+  }
 
 echo "<br>";
 echo "<br>";
