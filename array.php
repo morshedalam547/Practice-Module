@@ -297,3 +297,5 @@ if ($average >= 80) {
 }
 
 myMark($math, $english, $bangla, $arabic, $history);
+
+
