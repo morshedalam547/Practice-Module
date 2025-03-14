@@ -198,3 +198,31 @@ echo "<br>";
       echo "<br>";
   }
   
+  $marks=[ 
+    "Morshed"  =>["physics"=> 85,"maths"=> 78,"chemistry"=>89],
+    "Nure Alam"=>["physics"=> 85,"match"=> 95,"chemistry"=>79],
+     "Al amin" =>["physics"=> 95, "match"=> 96, "chemistry"=>79],
+  ];
+  
+  echo "<table border='2px' cellpadding='5px' cellspacing='0'>
+  <tr>
+  <th>Student Name</th>
+  <th>physics</th>
+  <th>match</th>
+  <th>chemistry</th>
+  </tr>";
+  
+  foreach($marks as $key => $v1){
+    echo "<tr>
+    <td>$key</td>" ;
+    foreach($v1 as $v2){
+      echo "<td>$v2</td>";
+    }
+  echo "</tr>";
+  }
+  echo "</table>";
+  
+  echo "<br>";
+  echo "<br>";
+  
+  
