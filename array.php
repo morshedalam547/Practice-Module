@@ -245,3 +245,7 @@ echo "</pre>";
 foreach($array as $value){
   echo "Name: " . $value["name"] ."<br>";
 }
+
+  
+echo "<br>";
+echo "<br>";
