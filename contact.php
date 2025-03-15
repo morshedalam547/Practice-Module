@@ -26,7 +26,7 @@ while(true){
         $address = readline("Enter address:");
         
         addContact($contacts, $name, $phone, $email, $address);
-        
+
     }elseif($choice == 2){
         foreach($contacts as $contact){
             echo "Name: ".$contact['name']."\n";
