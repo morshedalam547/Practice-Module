@@ -2,10 +2,9 @@
 
 $contacts =[];
 
-
 function addContact( &$contacts, $name, $phone, $email, $address) {
-    global $contact;
-    $contact[] = [
+    global $contacts;
+    $contacts[] = [
         'name' => $name,
         'phone' => $phone,
         'email' => $email,
@@ -21,17 +20,14 @@ while(true){
     $choice = readline();
 
     if($choice == 1){
-        echo "Enter name: ";
-        $name = readline();
-        echo "Enter phone: ";
-        $phone = readline();
-        echo "Enter email: ";
-        $email = readline();
-        echo "Enter address: ";
-        $address = readline();
-        addContact($contact, $name, $phone, $email, $address);
+        $name = readline("Enter name:");
+        $phone = readline("Enter phone:");
+        $email = readline("Enter email:");
+        $address = readline("Enter address:");
+        
+        addContact($contacts, $name, $phone, $email, $address);
+        
     }elseif($choice == 2){
-        echo "No contact available\n";
         foreach($contacts as $contact){
             echo "Name: ".$contact['name']."\n";
             echo "Phone: ".$contact['phone']."\n";
@@ -41,6 +37,6 @@ while(true){
     }elseif($choice == 3){
         break;
     }else{
-        echo "Invalid choice\n";
+        echo "Invalid choice .Please Right Choice \n";
     }
 }
