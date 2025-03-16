@@ -1,7 +1,6 @@
 <?php
 
-$contacts =[];
-
+$contacts = [];
 function addContact( &$contacts, $name, $phone, $email, $address) {
     global $contacts;
     $contacts[] = [
