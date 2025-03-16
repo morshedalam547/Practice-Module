@@ -252,6 +252,16 @@ echo "<br>";
     ["name"=>"Mahid" , "age"=> 40, "city"=>"Dhaka"],
 
   ];
+  
+  $array=[
+    
+    
+    ["name"=>"Morshed" , "age"=> 25, "city"=>"Dhaka"],
+    ["name"=>"Nure Alam" , "age"=> 30, "city"=>"Dhaka"],
+    ["name"=>"Al amin" , "age"=> 35, "city"=>"Dhaka"],
+    ["name"=>"Mahid" , "age"=> 40, "city"=>"Dhaka"],
+
+  ];
 
 
   echo "<pre>";
