@@ -208,6 +208,13 @@ echo "<br>";
       }
       echo "<br>";
   }
+  foreach ($marks1 as $key => $value) {
+      echo "Name: $key <br>";
+      foreach ($value as $key1 => $value1) {
+          echo "Subject: $key1, Marks: $value1 <br>";
+      }
+      echo "<br>";
+  }
   
   $marks=[ 
     "Morshed"  =>["physics"=> 85,"maths"=> 78,"chemistry"=>89],

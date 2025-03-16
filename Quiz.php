@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 function evaluateQuiz(array $questions, array $answers): int {
     $score = 0;
     foreach ($questions as $index => $question) {
@@ -34,6 +31,8 @@ if($score === count($questions)){
 }else{
     echo "Better luck next time !\n";
 }
+
+//or   
 
 
 // function evaluateQuiz(array $questions, array $answers): int {
