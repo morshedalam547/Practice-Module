@@ -51,3 +51,12 @@ $string1 = ' Mahid ';
 $string2 = 'Hossain';
 
 echo trim($string1) . $string2;
+
+$skills = "HTM, CSS, JS, PHP, MYSQL";
+
+
+$databaseData= json_encode($skills);
+
+echo "<pre>";
+var_dump($databaseData);
+echo "</pre>";
