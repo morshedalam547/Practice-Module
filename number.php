@@ -52,7 +52,7 @@ $string2 = 'Hossain';
 
 echo trim($string1) . $string2;
 
-$skills = "HTM, CSS, JS, PHP, MYSQL";
+$skills = ["HTM, CSS, JS, PHP, MYSQL"];
 
 
 $databaseData= json_encode($skills);
