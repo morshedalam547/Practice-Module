@@ -296,6 +296,21 @@ if ($average >= 80) {
 
 }
 
-myMark($math, $english, $bangla, $arabic, $history);
+myMark2($math, $english, $bangla, $arabic, $history);
+
+echo "Your Average Marks: $average\\n";
+
+if ($average >= 80) {
+    echo "You Have Achieved A+\\n";
+} elseif ($average >= 60) {
+    echo "You Have Achieved A-\\n";
+} else {
+    echo "You Are Failed\\n";
+}
+
+
+
+
+myMark2($math, $english, $bangla, $arabic, $history);
 
 
