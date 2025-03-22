@@ -18,6 +18,8 @@ while(true){
     echo "Enter your choice: ";
     $choice = readline();
 
+}
+
     if($choice == 1){
         $name = readline("Enter name:");
         $phone = readline("Enter phone:");
@@ -34,9 +36,9 @@ while(true){
             echo "Address: ".$contact['address']."\n";
         }
     }elseif($choice == 3){
-        break;
+      
     }else{
         echo "Invalid choice .Please Right Choice \n";
     }
-}
+
 
