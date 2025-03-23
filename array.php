@@ -414,7 +414,7 @@ $arabic = (int) readline();
 echo "History Mark is: ";
 $history = (int) readline();
 
-function myMark($math, $english, $bangla, $arabic, $history) {
+function myMark4($math, $english, $bangla, $arabic, $history) {
 $allMarks = $math + $english + $bangla + $arabic + $history;
 $average = $allMarks / 5;
 
