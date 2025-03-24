@@ -413,6 +413,58 @@ $arabic = (int) readline();
 
 echo "History Mark is: ";
 $history = (int) readline();
+  foreach($marks as $key => $v1){
+    echo "<tr>
+    <td>$key</td>" ;
+    foreach($v1 as $v2){
+      echo "<td>$v2</td>";
+    }
+  echo "</tr>";
+  }
+  echo "</table>";
+  
+  echo "<br>";
+  echo "<br>";
+  
+  
+echo "<br>";
+echo "<br>";
+
+
+echo "Math Mark is: ";
+$math = (int) readline();
+
+echo "English Mark is: ";
+$english = (int) readline();
+
+echo "Bangla Mark is: ";
+$bangla = (int) readline();
+
+echo "Arabic Mark is: ";
+$arabic = (int) readline();
+
+echo "History Mark is: ";
+$history = (int) readline();
+  
+  
+echo "<br>";
+echo "<br>";
+
+
+echo "Math Mark is: ";
+$math = (int) readline();
+
+echo "English Mark is: ";
+$english = (int) readline();
+
+echo "Bangla Mark is: ";
+$bangla = (int) readline();
+
+echo "Arabic Mark is: ";
+$arabic = (int) readline();
+
+echo "History Mark is: ";
+$history = (int) readline();
 
 function myMark4($math, $english, $bangla, $arabic, $history) {
 $allMarks = $math + $english + $bangla + $arabic + $history;
