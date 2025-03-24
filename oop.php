@@ -46,7 +46,8 @@ $student1 -> getStudentInfo("Mahid", 1, "Programmer");
 // $student3 -> showResult();
 // $student3 -> getStudentInfo("Morshed", 3, "Programmer");
 
-
+echo "<br>";
+echo "<br>";
 
 class person{
 
@@ -54,13 +55,13 @@ class person{
     public $age;
 
 
-    function __construct($name="no Name", $age = 0 ){
+    function __construct($name="No Name", $age = 0 ){
         $this->name = $name;
         $this->age = $age;
    
     }
 function show(){
-    echo $this->name . " " . $this->age;
+    echo $this->name . " " . $this->age ." <br>";
 }
 }
 
@@ -68,6 +69,6 @@ $p1 = new person();
 $p2 = new person("Mahid", 25);
 $p3 = new person("Morshed", 26);
 
-p1->show();
-p2->show();
-p3->show();
+$p1->show();
+$p2->show();
+$p3->show();
