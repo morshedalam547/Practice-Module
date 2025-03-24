@@ -5,13 +5,11 @@ class student{
     public $roll;
     public $class;
 
-
     public function getStudentInfo($name, $roll, $class){
         $this->name = $name;
         $this->roll = $roll;
         $this->class = $class;
-    
-    }
+        }
     
     public function showResult(){
         echo "Name: $this->name". "<br>";
@@ -49,6 +47,8 @@ $student3 -> showResult();
 
 echo "<br>";
 echo "<br>";
+
+
 
 
 class person{
