@@ -30,24 +30,26 @@ $student1 -> class = "Programmer";
 $student1 -> showResult();
 $student1 -> getStudentInfo("Mahid", 1, "Programmer");
 
-
-// $student2 = new student();
-// $student2 -> name = "Morshed";
-// $student2 -> roll = 2;
-// $student2 -> class = "Programmer";
-// $student2 -> showResult();
-// $student2 -> getStudentInfo("Morshed", 2, "Programmer");
+echo "<br>";
+echo "<br>";
 
 
-// $student3 = new student();
-// $student3 -> name = "Nure alam";
-// $student3 -> roll = 3;
-// $student3 -> class = "Programmer";
-// $student3 -> showResult();
-// $student3 -> getStudentInfo("Morshed", 3, "Programmer");
+$student2 = new student();
+$student2 -> name = "Morshed";
+$student2 -> roll = 2;
+$student2 -> class = "Programmer";
+$student2 -> showResult();
+$student2 -> getStudentInfo("Morshed", 2, "Programmer");
 
 echo "<br>";
 echo "<br>";
+
+$student3 = new student("Maimuna", 4, "Programmer");
+$student3 -> showResult();
+
+echo "<br>";
+echo "<br>";
+
 
 class person{
 
@@ -56,17 +58,21 @@ class person{
 
 
     function __construct($name="No Name", $age = 0 ){
-        $this->name = $name;
+        $this->name = $name ;
         $this->age = $age;
    
     }
 function show(){
-    echo $this->name . " " . $this->age ." <br>";
+    echo "Name: $this->name" . "<br>";
+    echo "Age: $this->age" . "<br>";
+
+    
 }
 }
 
+
 $p1 = new person();
-$p2 = new person("Mahid", 25);
+$p2 = new person("Mahid", 25) ;
 $p3 = new person("Morshed", 26);
 
 $p1->show();
