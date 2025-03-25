@@ -1,39 +1,29 @@
 <?php
 
-abstract class person{
-    public $name;
-    public $age;
-    
-    public function __construct($name="No Name", $age = 0){
-        $this->name = $name;
-        $this->age = $age;
-    }
-    
-    public function show(){
-        echo "Name: $this->name" . "<br>";
-        echo "Age: $this->age" . "<br>";
-    }
-    
-    abstract public function work();
+abstract class shape {
+    abstract public function getArea();
 }
 
-class player extends person{
-    public $game;
-    
-    public function __construct($name="No Name", $age = 0, $game = "No Game"){
-        parent::__construct($name, $age);
-        $this->game = $game;
+
+class circle extends shape {
+   public $radius;
+
+    public function __construct($radius2) {
+        $this->radius = $radius2;
     }
+
     
-    public function show(){
-        parent::show();
-        echo "Game: $this->game" . "<br>";
-    }
-    
-    public function work(){
-        echo "I am a player" . "<br>";
+    public function getArea() {
+        return PI() * $this->radius * $this->radius;
     }
 }
 
-$player1 = new player("Mahid", 25, "Cricket") ;
-$player1->show();
+
+
+$circle = new circle(5);
+
+echo $circle->getArea(); 
+
+
+
+
