@@ -50,37 +50,3 @@ echo "<br>";
 
 
 
-
-class person{
-
-    public $name;
-    public $age;
-
-
-    function __construct($name="No Name", $age = 0 ){
-        $this->name = $name ;
-        $this->age = $age;
-   
-    }
-function show(){
-    echo "Name: $this->name " .  " Age: $this->age " ." <br>";
-    
-
-    
-}
-}
-
-
-$p1 = new person();
-$p2 = new person("Mahid", 25);
-$p3 = new person("Morshed", 26);
-
-$p1->show();
-$p2->show();
-$p3->show();
-
-echo "<br>";
-echo "<br>";
-
-
-//Abstract Class Work under
