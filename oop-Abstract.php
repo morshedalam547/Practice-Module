@@ -30,23 +30,37 @@ echo $circle->getArea();
 echo "<br>";
 
 
+//static method
+
 class counter{
 
     public static $counter = 0;
 
-    public function __construct(){
+    public static function increment(){  //akhene $this->counter dile error dekhabe karon static
         self::$counter++;
     }
-  public function showCounter(){
-      return self::$counter;
-  }
+ 
 
 }
 
-$c1 = new counter();
-$c1 = new counter();
-$c1 = new counter();
-$c1 = new counter();
+counter::increment();
+counter::increment();
+counter::increment();
 
 
-echo $c1->showCounter();
+echo counter::$counter;
+
+echo "<br>";
+
+
+class utility{
+
+    public static $loggedinUserName;
+    public static  function loggedUserName(){
+        return "Logged in user";
+    }
+
+
+
+
+}
