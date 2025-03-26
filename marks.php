@@ -160,22 +160,3 @@ if ($math < 33 || $english < 33 || $science < 33 || $social_science < 33 || $phi
 
 echo "<br>";
 
-// Function to evaluate quiz result
-function evaluateQuiz($correctAnswers) {
-    if ($correctAnswers == 3) {
-        return "Great";
-    } elseif ($correctAnswers == 2) {
-        return "Average";
-    } elseif ($correctAnswers == 1) {
-        return "Medium level";
-    } else {
-        return "Failed";
-    }
-}
-
-// Example usage
-// Get the number of correct answers from user input (can be from a form or hardcoded)
-$correctAnswers = 1; // This would be dynamically assigned based on the user's input
-
-// Call the function and print the result
-echo "Result: " . evaluateQuiz(1);
