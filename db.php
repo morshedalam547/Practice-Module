@@ -179,3 +179,39 @@ function my_name2(){
 }
 my_name2();
  echo "<br>";
+
+
+
+ 
+ class person{
+
+
+    public $name;
+    
+    public $age;
+    
+  
+    
+    public function getPersonInfo($name,$age){
+    
+  
+     $this->name = $name;
+     $this-> age = $age;
+    
+      
+    }
+    
+    
+    public function showPersonInfo(){
+    
+        echo "name: $this-> name";
+        echo "age : $this-> age";
+    }
+  
+    
+    }
+    
+    $p1 = new person();
+    
+    $p1-> showPersonInfo();
+    $p1-> getPersonInfo  ("Morshed", 32);
